@@ -34,6 +34,6 @@ class Hotel {
     string m_nom;
     string m_ville; 
     vector m_liste_chambres;
-}
+};
 
 #endif // HOTEL.H
