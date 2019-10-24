@@ -12,8 +12,8 @@
 #include "chambre.h"
 using namespace std;
 
-#ifndef HOTEL.H
-#define HOTEL.H
+#ifndef HOTEL_H
+#define HOTEL_H
 
 class Hotel {
   public:
@@ -36,4 +36,4 @@ class Hotel {
     vector m_liste_chambres;
 };
 
-#endif // HOTEL.H
+#endif // HOTEL_H
