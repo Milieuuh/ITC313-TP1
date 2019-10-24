@@ -29,6 +29,6 @@ class Client{
     string m_nom_Client;
     string m_prenom_Client;
     int m_nbReservations_Client;
-}
+};
 
 #endif // _client_h
