@@ -51,17 +51,17 @@ double Reservation::geMontantTotal()
   return m_montant_total;
 }
 
-Reservation::setMontantTotal(double prix)
+void Reservation::setMontantTotal(double prix)
 {
   m_montant_total = prix; 
 }
    
-Reservation::setIDChambre(int idChambre)
+void Reservation::setIDChambre(int idChambre)
 {
   m_id_chambre = idChambre;
 }
     
-Reservation::modifierDatesSejour()
+void Reservation::modifierDatesSejour()
 {
 
 }
