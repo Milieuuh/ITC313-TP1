@@ -9,43 +9,43 @@
 
 //Constructors
 Chambre::Chambre(){
-    this->m_id_Chambre=0;
-    this->m_type_Chambre="nul";
-    this->m_prix_Chambre=0.0;
+    m_id_Chambre=0;
+    m_type_Chambre="nul";
+    m_prix_Chambre=0.0;
 }
 
 Chambre::Chambre(int id, string type, double prix)
 {
-    this->m_id_Chambre=id;
-    this->m_type_Chambre=type;
-    this->m_prix_Chambre=prix;
+    m_id_Chambre=id;
+    m_type_Chambre=type;
+    m_prix_Chambre=prix;
 }
 
 //GETTERS
 double Chambre::getPrixChambre()
 {
-  return this->m_id_Chambre;
+  return m_id_Chambre;
 }
 
 string Chambre::getTypeChambre()
 {
-  return this->m_type_Chambre;
+  return m_type_Chambre;
 }
 
 int Chambre::getIdChambre()
 {
-  return this->m_id_Chambre;
+  return m_id_Chambre;
 }
 
 //SETTERS
 void setPrixChambre(double prix)
 {
-  this->m_prix_Chambre=prix;
+  m_prix_Chambre=prix;
 }
 
 void setTypeChambre(string type)
 {
-  this->m_type_Chambre=type;
+  m_type_Chambre=type;
 }
 
 //TO STRING
