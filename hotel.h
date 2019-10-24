@@ -17,10 +17,15 @@ using namespace std;
 class Hotel {
   public:
     Hotel(); 
+ 
+    //GETTERS
     string getIdHotel(); 
     string getNom(); 
     string getVille(); 
     array getListeChambres(); 
+ 
+    //AUTRES METHODES / FONCTIONS
+    ajoutChambre(Chambre ch); 
     
   
   private:
