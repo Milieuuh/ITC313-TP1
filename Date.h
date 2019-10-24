@@ -29,6 +29,6 @@ class Date{
     int m_jour;
     int m_mois;
     int m_annee;
-}
+};
 
 #endif // _Date_h
