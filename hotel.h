@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <string>
-#include <array>
+#include <vector>
 #include "chambre.h"
 using namespace std;
 
@@ -17,13 +17,13 @@ using namespace std;
 
 class Hotel {
   public:
-    Hotel(string id=0, string nom, string ville, array liste_chambre); 
+    Hotel(string id=0, string nom, string ville, vector liste_chambre); 
  
     //GETTERS
     string getIdHotel(); 
     string getNom(); 
     string getVille(); 
-    array getListeChambres(); 
+    vector getListeChambres(); 
  
     //AUTRES METHODES / FONCTIONS
     ajoutChambre(Chambre ch); 
@@ -33,7 +33,7 @@ class Hotel {
     string m_id_hotel;
     string m_nom;
     string m_ville; 
-    array m_liste_chambres;
+    vector m_liste_chambres;
 }
 
 #endif // HOTEL.H
