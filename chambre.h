@@ -32,7 +32,7 @@ class Chambre{
     string m_type_Chambre;
     double m_prix_Chambre;
 
-}
+};
 
 
 #endif // _chambre_h
