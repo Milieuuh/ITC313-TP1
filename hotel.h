@@ -17,7 +17,7 @@ using namespace std;
 
 class Hotel {
   public:
-    Hotel(); 
+    Hotel(string id, string nom, string ville, array liste_chambre); 
  
     //GETTERS
     string getIdHotel(); 
