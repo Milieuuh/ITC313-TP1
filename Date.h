@@ -14,6 +14,7 @@ using namespace std;
 
 class Date{
   public:
+    Date();
     Date(int jour, int mois, int annee);
     
     int getJour();
