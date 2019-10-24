@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <string>
-#include "date.h"
+#include "Date.h"
 
 using namespace std;
 
