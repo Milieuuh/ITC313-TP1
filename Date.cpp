@@ -42,5 +42,5 @@ Date::Date(int jour, int mois, int annee)
 //To String 
   string Date::toString()
   {
-    return "en cours d ecriture";
+    return getJour()+"/"+getMois()+"/"+getAnnee();
   }
