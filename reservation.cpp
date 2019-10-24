@@ -13,7 +13,7 @@ Reservation::Reservation()
 
 }
 
-Reservation:: Reservation(int id, Date debut, Date fin,string id_hotel, int id_chambre, int id_client, double montant)
+Reservation::Reservation(int id, Date debut, Date fin,string id_hotel, int id_chambre, int id_client, double montant)
 {
 
 }
