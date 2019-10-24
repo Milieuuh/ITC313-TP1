@@ -23,6 +23,7 @@ class Date{
     void setDate(int jour, int mois, int annee);
     
     string toString();
+    string dateToString();
   
   private:
     int m_jour;
