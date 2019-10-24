@@ -10,7 +10,7 @@
 #include <string>
 #include "date.h"
 
-using namespaces std;
+using namespace std;
 
 #ifndef _reservation_h
 #define _reservation_h
