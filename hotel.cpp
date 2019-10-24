@@ -9,7 +9,7 @@
 #include "hotel.h"
 using namespace std; 
 
-Hotel::Hotel(string id, string nom, string ville, array liste_chambre)
+Hotel::Hotel(string id, string nom, string ville, vector liste_chambre)
 {
    m_nom= nom; 
    m_ville = ville;
@@ -18,24 +18,24 @@ Hotel::Hotel(string id, string nom, string ville, array liste_chambre)
 
 string Hotel::getIdHotel()
 {
-
+   return m_idHotel; 
 }
 string Hotel::getNom()
 {
-
+  return m_nom;
 }
 
 string Hotel::getVille()
 {
-
+  return m_ville;
 }
 
-array Hotel::getListeChambres()
+vector Hotel::getListeChambres()
 {
-
+   return m_liste_chambre; 
 }
 
  Hotel::ajoutChambre(Chambre ch)
  {
- 
+    m_liste_chambre.push_back(ch);
  }
