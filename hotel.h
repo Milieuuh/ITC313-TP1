@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <array>
+#include "chambre.h"
 using namespace std;
 
 #ifndef HOTEL.H
