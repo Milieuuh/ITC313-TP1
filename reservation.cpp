@@ -6,6 +6,8 @@
 * Summary:  Défintion de la classe Reservation
 */
 
+#include "reservation.h"
+
 Reservation::Reservation()
 {
 
