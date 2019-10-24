@@ -22,7 +22,7 @@ class Reservation{
     
     //GETTERS
     int getIdReservation(); 
-    Date getDateDebur(); 
+    Date getDateDebut(); 
     Date getDateFin(); 
     string getIdHotel(); 
     int getIdChambre(); 
