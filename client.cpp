@@ -40,6 +40,7 @@ Client::Client(int id,string nom, string prenom,int nbReservations)
   //SETTER
   void Client::setNbReservation(int nbReservation)
   {
+     m_nbReservations_Client=nbReservation; 
   }
     
   //To String
