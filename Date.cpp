@@ -8,6 +8,13 @@
 
 #include "Date.h"
 
+Date::Date()
+{
+    m_jour=1;
+    int m_mois=1;
+    m_annee=2019;
+}
+
 Date::Date(int jour, int mois, int annee)
 {
     m_jour=jour;
@@ -42,7 +49,8 @@ Date::Date(int jour, int mois, int annee)
 //To String 
   string Date::toString()
   {
-    return getJour()+"/"+getMois()+"/"+getAnnee();
+    //return getJour()+"/"+getMois()+"/"+getAnnee();
+      return "date à faire";
   }
 
     string Date::dateToString()
@@ -50,5 +58,6 @@ Date::Date(int jour, int mois, int annee)
         string mois[12]={"Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Décembre"}
         string current_mois=mois[m_mois-1];
         
-        return "Date : "+getJour()+" "+current_mois+" "+getAnnee();
+       // return "Date : "+getJour()+" "+current_mois+" "+getAnnee();
+        return "dateToStrong à faire";
     }
