@@ -11,7 +11,7 @@
 #include <iostream>
 #include <string>
 
-using namespaces std;
+using namespace std;
 
 class Chambre{
   public:
