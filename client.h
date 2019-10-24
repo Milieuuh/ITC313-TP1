@@ -18,7 +18,7 @@ class Client{
     int getIdClient();
     string getNomClient();
     string getPrenomClient();
-    string getNbReservations();
+    int getNbReservations();
     
     void setNbReservation(int nbReservation);
     
