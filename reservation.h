@@ -48,7 +48,7 @@ class Reservation{
     double m_montant_total; 
     
 
-}
+};
 
 
 #endif // _reservation_h
