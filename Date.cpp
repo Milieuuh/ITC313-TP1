@@ -18,7 +18,7 @@ Date::Date()
 Date::Date(int jour, int mois, int annee)
 {
     m_jour=jour;
-    int m_mois=mois;
+    m_mois=mois;
     m_annee=annee;
 }
 
@@ -53,11 +53,11 @@ Date::Date(int jour, int mois, int annee)
       return "date à faire";
   }
 
-    string Date::dateToString()
-    {
-        string mois[12]={"Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Décembre"}
-        string current_mois=mois[m_mois-1];
-        
-       // return "Date : "+getJour()+" "+current_mois+" "+getAnnee();
-        return "dateToStrong à faire";
-    }
+string Date::dateToString()
+{
+    string mois[12]={"Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Décembre"}
+    string current_mois=mois[m_mois-1];
+
+   // return "Date : "+getJour()+" "+current_mois+" "+getAnnee();
+    return "dateToStrong à faire";
+}
