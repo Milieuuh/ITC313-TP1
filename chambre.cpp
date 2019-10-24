@@ -38,12 +38,12 @@ int Chambre::getIdChambre()
 }
 
 //SETTERS
-void setPrixChambre(double prix)
+void Chambre::setPrixChambre(double prix)
 {
   m_prix_Chambre=prix;
 }
 
-void setTypeChambre(string type)
+void Chambre::setTypeChambre(string type)
 {
   m_type_Chambre=type;
 }
