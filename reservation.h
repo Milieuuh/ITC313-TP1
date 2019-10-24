@@ -30,11 +30,11 @@ class Reservation{
     double geMontantTotal(); 
     
     //SETTERS
-    setMontantTotal(double prix); 
-    setIDChambre(int idChambre);
+    void setMontantTotal(double prix); 
+    void setIDChambre(int idChambre);
     
     //AUTRES METHODES
-    modifierDatesSejour();
+    void modifierDatesSejour();
     double calculMontant(int NombreNuit, double prixNuit, double remise=1);
     
   
