@@ -25,7 +25,7 @@ class Chambre{
     void setPrixChambre(double prix);
     void setTypeChambre(string type);
   
-    string ToString();
+    string toString();
   
   private:
     int m_id_Chambre;
