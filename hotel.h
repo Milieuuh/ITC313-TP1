@@ -26,7 +26,7 @@ class Hotel {
     vector getListeChambres(); 
  
     //AUTRES METHODES / FONCTIONS
-    ajoutChambre(Chambre ch); 
+    void ajoutChambre(Chambre ch); 
     
   
   private:
