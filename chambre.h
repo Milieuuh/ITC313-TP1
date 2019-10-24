@@ -16,7 +16,7 @@ using namespace std;
 class Chambre{
   public:
     Chambre();
-    Chambre(int id, string type="", double prix="");
+    Chambre(int id, string type="", double prix=0);
     
     double getPrixChambre();
     string getTypeChambre();
