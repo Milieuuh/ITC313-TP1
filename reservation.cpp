@@ -12,8 +12,8 @@
 Reservation::Reservation()
 {   
      m_id_reservation=0; 
-     m_date_debut(1,1,2020);    
-     m_date_fin(1,1,2020); 
+     /*m_date_debut(1,1,2020);    
+     m_date_fin(1,1,2020);*/
      m_id_hotel= ""; 
      m_id_chambre= 0; 
      m_montant_total=0;
