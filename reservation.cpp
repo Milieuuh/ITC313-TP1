@@ -9,13 +9,18 @@
 #include "reservation.h"
 
 Reservation::Reservation()
-{
-
+{   
+     m_id_reservation=0;
 }
 
 Reservation::Reservation(int id, Date debut, Date fin,string id_hotel, int id_chambre, int id_client, double montant)
 {
-
+     m_id_reservation=id;
+     m_date_debut=debut;    
+     m_date_fin=fin; 
+     m_id_hotel= id_hotel; 
+     m_id_chambre= id_chambre; 
+     m_montant_total=montant;
 }
 
 int Reservation::getIdReservation()
