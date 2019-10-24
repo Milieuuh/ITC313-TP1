@@ -35,7 +35,7 @@ vector Hotel::getListeChambres()
    return m_liste_chambre; 
 }
 
- Hotel::ajoutChambre(Chambre ch)
+ void Hotel::ajoutChambre(Chambre ch)
  {
     m_liste_chambre.push_back(ch);
  }
