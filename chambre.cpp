@@ -51,5 +51,6 @@ void Chambre::setTypeChambre(string type)
 //TO STRING
 string Chambre::toString()
 {
-    return "Chambre n°" << getIdChambre() << "\nType : " << getTypeChambre() << "\nPrix : "<<getPrixChambre() <<" €";
+    //return "Chambre n°" << getIdChambre() << "\nType : " << getTypeChambre() << "\nPrix : "<<getPrixChambre() <<" €";
+    return ""; 
 }
