@@ -5,7 +5,7 @@
 * Summary:  Défintio de la classe Chambre
 */
 
-#include "Chambre.h"
+#include "chambre.h"
 
 //Constructors
 Chambre::Chambre(){
