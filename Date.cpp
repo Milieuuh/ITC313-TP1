@@ -44,3 +44,11 @@ Date::Date(int jour, int mois, int annee)
   {
     return getJour()+"/"+getMois()+"/"+getAnnee();
   }
+
+    string Date::dateToString()
+    {
+        string mois[12]={"Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Décembre"}
+        string current_mois=mois[m_mois-1];
+        
+        return "Date : "+getJour()+" "+current_mois+" "+getAnnee();
+    }
