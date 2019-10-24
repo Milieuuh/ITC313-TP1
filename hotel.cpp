@@ -9,9 +9,11 @@
 #include "hotel.h"
 using namespace std; 
 
-Hotel::Hotel()
+Hotel::Hotel(string id, string nom, string ville, array liste_chambre)
 {
-
+   m_nom= nom; 
+   m_ville = ville;
+   m_liste_chambre=liste_chambre; 
 }
 
 string Hotel::getIdHotel()
