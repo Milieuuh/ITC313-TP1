@@ -32,7 +32,7 @@ string Chambre::getTypeChambre()
   return m_type_Chambre;
 }
 
-int Chambre::getidChambre()
+int Chambre::getIdChambre()
 {
   return m_id_Chambre;
 }
@@ -51,4 +51,5 @@ void setTypeChambre(string type)
 //TO STRING
 string Chambre::ToString()
 {
+    return "Chambre n°"+getIdChambre()+"\nType : "+getTypeChambre()+"\nPrix : "+getPrixChambre()+" €";
 }
