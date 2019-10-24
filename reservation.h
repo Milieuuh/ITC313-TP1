@@ -39,7 +39,7 @@ class Reservation{
     
   
   private:
-    int m_id_Reservation;
+    int m_id_reservation;
     Date m_date_debut;
     Date m_date_fin;
     string m_id_hotel; 
