@@ -32,7 +32,7 @@ Client::Client(int id,string nom, string prenom,int nbReservations)
     return m_prenom_Client;
   }
   
-  string Client::getNbReservations()
+  int Client::getNbReservations()
   {
     return m_nbReservations_Client;
   }
@@ -46,7 +46,8 @@ Client::Client(int id,string nom, string prenom,int nbReservations)
   //To String
   string Client::toString()
   {
-    return "Client n°"+getIdClient()+"\nNom : "+getNomClient()+"\nPrénom : "+getPrenomClient()+"\nNombre de réservations : "+getNbReservations();
+      return "à faire";
+    //return "Client n°"+getIdClient()+"\nNom : "+getNomClient()+"\nPrénom : "+getPrenomClient()+"\nNombre de réservations : "+getNbReservations();
   }
   
 
