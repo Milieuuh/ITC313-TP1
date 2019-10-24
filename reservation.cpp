@@ -7,6 +7,7 @@
 */
 
 #include "reservation.h"
+#include "Date.h"
 
 Reservation::Reservation()
 {   
