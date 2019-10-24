@@ -19,7 +19,7 @@ Hotel::Hotel(string id, string nom, string ville)
 
 string Hotel::getIdHotel()
 {
-   return m_idHotel; 
+   return m_id_Hotel; 
 }
 string Hotel::getNom()
 {
