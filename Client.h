@@ -9,6 +9,7 @@
 #define _client_h
 
 #include <string>
+using namespace std;
 
 class Client{
   public:
