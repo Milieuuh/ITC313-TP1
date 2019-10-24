@@ -10,7 +10,12 @@
 
 Reservation::Reservation()
 {   
-     m_id_reservation=0;
+     m_id_reservation=0; 
+     m_date_debut=Date date(1,1,2020);    
+     m_date_fin=Date date2(1,1,2020); 
+     m_id_hotel= 0; 
+     m_id_chambre= 0; 
+     m_montant_total=0;
 }
 
 Reservation::Reservation(int id, Date debut, Date fin,string id_hotel, int id_chambre, int id_client, double montant)
