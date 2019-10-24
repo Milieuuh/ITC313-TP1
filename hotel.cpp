@@ -10,7 +10,7 @@
 #include <vector>
 using namespace std; 
 
-Hotel::Hotel(string id, string nom, string ville/*, vector liste_chambre*/)
+Hotel::Hotel(string id, string nom, string ville)
 {
    m_nom= nom; 
    m_ville = ville;
