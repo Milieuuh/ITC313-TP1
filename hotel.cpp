@@ -5,16 +5,14 @@
 
 
 #include <string>
-#include <iostream>
 #include "hotel.h"
-#include <vector>
 using namespace std; 
 
 Hotel::Hotel(string id, string nom, string ville)
 {
-   m_nom= nom; 
-   m_ville = ville;
-  // m_liste_chambre=liste_chambre; 
+   m_id_hotel=id; 
+   m_nom=nom; 
+   m_ville=ville;
 }
 
 string Hotel::getIdHotel()
