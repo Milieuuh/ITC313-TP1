@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <string>
-//#include <vector>
+#include <vector>
 #include "chambre.h"
 using namespace std;
 
@@ -23,7 +23,7 @@ class Hotel {
     string getIdHotel(); 
     string getNom(); 
     string getVille(); 
-    //vector getListeChambres(); 
+    vector<Chambre> getListeChambres(); 
  
     //AUTRES METHODES / FONCTIONS
     void ajoutChambre(Chambre ch); 
@@ -33,7 +33,7 @@ class Hotel {
     string m_id_hotel;
     string m_nom;
     string m_ville; 
-   // vector m_liste_chambres;
+    vector<Chambre> m_liste_chambres;
 };
 
 #endif // HOTEL_H

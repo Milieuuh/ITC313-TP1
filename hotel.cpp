@@ -5,6 +5,7 @@
 
 
 #include <string>
+#include <vector>
 #include "hotel.h"
 using namespace std; 
 
@@ -13,6 +14,7 @@ Hotel::Hotel(string id, string nom, string ville)
    m_id_hotel=id; 
    m_nom=nom; 
    m_ville=ville;
+   vector<Chambre> m_liste_chambres={}; 
 }
 
 string Hotel::getIdHotel()
@@ -29,12 +31,12 @@ string Hotel::getVille()
   return m_ville;
 }
 
-/*vector Hotel::getListeChambres()
+vector<Chambre> Hotel::getListeChambres()
 {
-   return m_liste_chambre; 
-}*/
+   return m_liste_chambres; 
+}
 
  void Hotel::ajoutChambre(Chambre ch)
  {
-    //m_liste_chambre.push_back(ch);
+    m_liste_chambres.push_back(ch);
  }
