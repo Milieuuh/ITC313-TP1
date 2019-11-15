@@ -18,7 +18,7 @@ using namespace std;
 class Clients{
     public:
         Clients();
-        void gestionHomonyme(string nom,vector<Client> clients);
+        vector<Client>  gestionHomonyme(string nom,vector<Client> clients);
         void ajoutClient(Client client);
         vector<Client> getListeClients();
 

@@ -17,24 +17,26 @@ Clients::Clients()
 }
 
 ///////////////////////////////////////////////////
-void Clients::ajoutClient(Client client)
-{
-    m_liste_Client.push_back(client);
-}
+  void Clients::ajoutClient(Client client)
+  {
+      m_liste_Client.push_back(client);
+  }
 
   vector<Client> Clients::getListeClients()
   {
     return m_liste_Client;
   }
 
- void Clients::gestionHomonyme(string nom,vector<Client> clients)
+ vector<Client> Clients::gestionHomonyme(string nom,vector<Client> clients)
  {
+   vector<Client> nouvelleListe;
    for(Client c:clients)
-   {
-   
+   {   
      if(nom==c.getNomClient())
      {
-       cout<<"good";
+       nouvelleListe.push_back(c);
      }
    }
+
+   return nouvelleListe;
  }   
