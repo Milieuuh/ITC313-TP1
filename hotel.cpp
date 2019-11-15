@@ -41,3 +41,15 @@ vector<Chambre> Hotel::getListeChambres()
     m_liste_chambres.push_back(ch);
  }
 
+ string Hotel::infoHotel()
+ {
+    cout << "Hotel " << m_id_hotel << "\nNom : " << m_nom << "\nVille : "<<m_ville<<"\n--------------Chambres\n";
+
+    for(Chambre c:m_liste_chambres)
+    {
+       c.infoChambre();
+    }
+
+    return " ";
+ }
+

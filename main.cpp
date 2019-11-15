@@ -30,10 +30,6 @@ int main() {
 		}			
 	}
 
-	for(Chambre c : hotel.getListeChambres())
-	{
-		c.infoChambre();
-	}
-	
+	hotel.infoHotel();
 	return 0; 
 }

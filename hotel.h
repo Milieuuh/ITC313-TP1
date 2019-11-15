@@ -23,6 +23,7 @@ class Hotel {
     string getIdHotel(); 
     string getNom(); 
     string getVille(); 
+    string infoHotel();
     vector<Chambre> getListeChambres(); 
  
     //AUTRES METHODES / FONCTIONS
