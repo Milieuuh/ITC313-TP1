@@ -21,6 +21,7 @@ class Clients{
         vector<Client>  gestionHomonyme(string nom);
         void ajoutClient(Client client);
         vector<Client> getListeClients();
+        void choixClient(vector<Client> client);
 
     private:
         vector<Client> m_liste_Client;

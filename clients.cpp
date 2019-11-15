@@ -1,3 +1,9 @@
+/** 
+* File:     clients.cpp 
+* Author:   Lucie BOUCQUEMONT
+* Date:     24/10/2019 
+* Summary:  Gestions des clients
+*/
 #include "clients.h"
 
 /////CONSTRUCTEUR
@@ -38,5 +44,34 @@ Clients::Clients()
      }
    }
 
+   if(nouvelleListe.empty)
+   {
+     for(Client c:m_liste_Client)
+     {
+       cout << "Ce client n'existe pas ! ";
+       nouvelleListe.push_back(c);
+     }
+   }
+
    return nouvelleListe;
  }   
+
+ void Clients::choixClient(vector<Client>client)
+ {
+   int nb;
+   cout<<"Choisissez le client avec l'id : ";
+   cin >>nb;
+
+   for(Client c:client)
+   {
+     if(nb==c.getIdClient())
+     {
+       c.toString();
+     }
+     else
+     {
+       cout<<"Cet id n'existe pas";
+     }
+     
+   }
+ }
