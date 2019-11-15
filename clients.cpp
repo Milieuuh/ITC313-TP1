@@ -27,10 +27,10 @@ Clients::Clients()
     return m_liste_Client;
   }
 
- vector<Client> Clients::gestionHomonyme(string nom,vector<Client> clients)
+ vector<Client> Clients::gestionHomonyme(string nom)
  {
    vector<Client> nouvelleListe;
-   for(Client c:clients)
+   for(Client c:m_liste_Client)
    {   
      if(nom==c.getNomClient())
      {
