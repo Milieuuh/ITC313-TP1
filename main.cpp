@@ -6,19 +6,30 @@
 
 int main() {
 
-	Chambre chambre(0, simple, 50); 
-	Chambre chambre2(0, simple, 50); 
+	//Création de l'hotel et des chambres
+	Hotel hotel("1", "Hotel Dieu", "Los Angeles");
+	
 
-	Hotel hotel("", "Nom", "Los Angeles");
-
-	Date dateSejourDebut(1,1,2019); 
-	Date dateSejourFin(5,1,2019); 
-
-	Client client(0, "nom", "prenom"); 
-
-	Reservation reservation(0, dateSejourDebut, dateSejourFin,hotel.getIdHotel(), chambre.getIdChambre(), client.getIdClient(),10);
-
-	std::cout << "Coucou" << std::endl; 
+	for(int i=0;i<10;i++)
+	{
+		if((i>=0)&(i<3))
+		{
+			Chambre chambre(i+1, simple, 100);
+			hotel.ajoutChambre(chambre);
+		}
+		else if((i>=3)&(i<8))
+		{
+			Chambre chambre(i+1, confort, 125);
+			hotel.ajoutChambre(chambre);		
+		}
+		else
+		{
+			Chambre chambre(i+1, suite, 210);
+			hotel.ajoutChambre(chambre);			
+		}
+			
+	}
+	
 
 
 	return 0; 
