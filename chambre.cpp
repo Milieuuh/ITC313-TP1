@@ -57,7 +57,7 @@ int Chambre::getIdChambre()
 string Chambre::getReserve(bool reserver)
 {    
     string s="libre";
-    
+
     if(reserver==1)
     {
       s="reserve";
@@ -100,5 +100,8 @@ string Chambre::infoChambre()
 {
     //return "Chambre n°"+std::to_string(getIdChambre())+"\nType : "+std::to_string(getTypeChambre())+"\nPrix : "+std::to_string(getPrixChambre())+" €";
     string s = getTypeChambre(m_type);
-    cout <<"\nChambre "<< m_id_Chambre << " - Reservee: "<< reserve <<"\nType : "<< s <<"\nPrix : "<<m_prix_Chambre<<"\n";
+    string r = getReserve(reserve);
+    cout <<"\nChambre "<< m_id_Chambre << " - Reservee: "<< r <<"\nType : "<< s <<"\nPrix : "<<m_prix_Chambre<<"\n";
+
+    return "";
 }
