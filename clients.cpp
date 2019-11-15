@@ -38,7 +38,7 @@ Clients::Clients()
      }
    }
 
-   if(nouvelleListe.empty)
+   if(nouvelleListe.empty())
    {
      for(Client c:m_liste_Client)
      {
