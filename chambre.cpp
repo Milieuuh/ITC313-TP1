@@ -29,14 +29,41 @@ double Chambre::getPrixChambre()
   return m_id_Chambre;
 }
 
-m_type_Chambre Chambre::getTypeChambre()
+string Chambre::getTypeChambre(m_type_Chambre type)
 {
-  return m_type;
+  string typeC;
+
+  if(type==0)
+  {
+    typeC="simple";
+  }
+  else if(type==1)
+  {
+    typeC="confort";
+  }
+  else if(type==2)
+  {
+    typeC="suite";
+  }
+
+  return typeC;
 }
 
 int Chambre::getIdChambre()
 {
   return m_id_Chambre;
+}
+
+string Chambre::getReserve(bool reserver)
+{    
+    string s="libre";
+    
+    if(reserver==1)
+    {
+      s="reserve";
+    }
+
+    return s;
 }
 
 //SETTERS
@@ -72,5 +99,6 @@ void Chambre::setReservation(bool reserver)
 string Chambre::infoChambre()
 {
     //return "Chambre n°"+std::to_string(getIdChambre())+"\nType : "+std::to_string(getTypeChambre())+"\nPrix : "+std::to_string(getPrixChambre())+" €";
-    return "Chambre n° "; 
+    string s = getTypeChambre(m_type);
+    cout <<"\nChambre "<< m_id_Chambre << " - Reservee: "<< reserve <<"\nType : "<< s <<"\nPrix : "<<m_prix_Chambre<<"\n";
 }

@@ -27,8 +27,12 @@ int main() {
 			Chambre chambre(i, suite, 210);
 			hotel.ajoutChambre(chambre);
 					
-		}
-			
+		}			
+	}
+
+	for(Chambre c : hotel.getListeChambres())
+	{
+		c.infoChambre();
 	}
 	
 

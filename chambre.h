@@ -21,8 +21,9 @@ class Chambre{
     Chambre(int id, m_type_Chambre type, double prix=0);
     
     double getPrixChambre();
-    m_type_Chambre getTypeChambre();
+    string getTypeChambre(m_type_Chambre);
     int getIdChambre();
+    string getReserve(bool reserver);
     
     void setPrixChambre(double prix);
     void setTypeChambre(m_type_Chambre type);
