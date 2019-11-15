@@ -13,7 +13,7 @@
 
 using namespace std;
 
-enum m_type_Chambre { simple, confort, suite};
+enum m_type_Chambre {simple, confort, suite};
 
 class Chambre{
   public:
@@ -27,6 +27,7 @@ class Chambre{
     void setPrixChambre(double prix);
     void setTypeChambre(m_type_Chambre type);
     void setChambre(m_type_Chambre type, double prix);
+    void setReservation(bool reserver);
   
     string infoChambre();
   
@@ -34,6 +35,7 @@ class Chambre{
     int m_id_Chambre;    
     double m_prix_Chambre;
     m_type_Chambre m_type;
+    bool reserve;
 
 };
 

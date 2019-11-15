@@ -12,15 +12,15 @@ Chambre::Chambre(){
     m_id_Chambre=0;
     m_type=simple;
     m_prix_Chambre=0.0;
+    reserve=false;
 }
 
 Chambre::Chambre(int id, m_type_Chambre type, double prix)
 {
     m_id_Chambre=id;
     m_prix_Chambre=prix;
-
-    setTypeChambre(type); 
-    
+    setTypeChambre(type);     
+    reserve=false;
 }
 
 //GETTERS
@@ -54,14 +54,18 @@ void Chambre::setTypeChambre(m_type_Chambre type)
     else
     {
       m_type=simple;
-    }  
-    
+    }      
 }
 
 void Chambre::setChambre(m_type_Chambre type, double prix)
 {
   m_prix_Chambre=prix;
   setTypeChambre(type);
+}
+
+void Chambre::setReservation(bool reserver)
+{
+  reserve=reserver;
 }
 
 //TO STRING
