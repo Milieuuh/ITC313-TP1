@@ -6,7 +6,7 @@
 
 int main() {
 
-	//Création de l'hotel et des chambres
+	//Création de l'hotel et de ses chambres
 	Hotel hotel("1", "Hotel Dieu", "Los Angeles");
 	
 
@@ -25,7 +25,8 @@ int main() {
 		else
 		{
 			Chambre chambre(i+1, suite, 210);
-			hotel.ajoutChambre(chambre);			
+			hotel.ajoutChambre(chambre);
+					
 		}
 			
 	}

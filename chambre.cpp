@@ -47,7 +47,7 @@ void Chambre::setPrixChambre(double prix)
 
 void Chambre::setTypeChambre(m_type_Chambre type)
 {
-    if(type==simple||type==confort||type==suite)
+    if((type==simple)||(type==confort)||(type==suite))
     {
       m_type=type;
     }
@@ -72,5 +72,5 @@ void Chambre::setReservation(bool reserver)
 string Chambre::infoChambre()
 {
     //return "Chambre n°"+std::to_string(getIdChambre())+"\nType : "+std::to_string(getTypeChambre())+"\nPrix : "+std::to_string(getPrixChambre())+" €";
-    return "A tester"; 
+    return "Chambre n° "; 
 }
