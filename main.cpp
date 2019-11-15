@@ -51,6 +51,23 @@ int main() {
 		c.toString();
 	}
 
+	//SAISIE DES DATES DE RESERVATION PAR L'UTILISATEUR
+	Date dateDebut, dateFin;
+	int jour=0;
+	int mois=0;  
+	int annee= 0;  
+
+	for(int i=0; i<2; i++)
+	{
+		cout << "Entrez le jour de la date de séjour que vous souhaitez : " ; 
+		cin >> jour ; 
+		cout << "Entrez le mois de la date de séjour que vous souhaitez : " ; 
+		cin >> mois ; 
+		cout << "Entrez l'année de la date de séjour que vous souhaitez : " ; 
+		cin >> annee ; 
+		
+	}
+
 
 	return 0; 
 }
