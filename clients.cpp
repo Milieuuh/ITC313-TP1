@@ -1,9 +1,4 @@
-/** 
-* File:     clients.cpp 
-* Author:   Lucie BOUCQUEMONT
-* Date:     24/10/2019 
-* Summary:  Gestions des clients
-*/
+
 #include "clients.h"
 
 /////CONSTRUCTEUR
