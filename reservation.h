@@ -36,6 +36,7 @@ class Reservation{
     
     //AUTRES METHODES
     double calculMontant(double prixNuit, double remise=1);
+    bool verifieDate(Date d1); 
     
   
   private:

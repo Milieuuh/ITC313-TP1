@@ -66,10 +66,10 @@ string Date::dateToString()
    
 }
 
-int Date::nbJourDansMois(Date d1)
+int Date::nbJourDansMois()
 {
   int numMois = 0; 
-  switch(d1.getMois()){
+  switch(this->getMois()){
     case 1 : numMois =31;
     break; 
     case 2 : numMois =28;
@@ -100,14 +100,14 @@ int Date::nbJourDansMois(Date d1)
 
 }
 
-int Date::differenceDate(Date debut, Date fin)
+int Date::differenceDate(Date fin)
 {
     int nbJours=0; 
-    if(fin.getJour()-debut.getJour()>0)
+    if(fin.getJour()-this->getJour()>0)
     {
-      nbJours= fin.getJour()-debut.getJour(); 
+      nbJours= fin.getJour()-this->getJour(); 
     } else {
-      nbJours = debut.nbJourDansMois(debut)-debut.getJour()+1+fin.getJour(); 
+      nbJours = this->nbJourDansMois()-this->getJour()+1+fin.getJour(); 
     }
 
     return nbJours; 

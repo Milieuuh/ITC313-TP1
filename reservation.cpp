@@ -86,7 +86,18 @@ void Reservation::setDatesSejour(Date dateDebut, Date dateFin)
 
 double Reservation::calculMontant( double prixNuit, double remise)
 {
-  int NombreNuit = m_date_debut.differenceDate(m_date_debut, m_date_fin);
+  int NombreNuit = m_date_debut.differenceDate(m_date_fin);
   double montant=NombreNuit*prixNuit*remise; 
   return montant; 
+}
+
+
+bool Reservation::verifieDate(Date d1)
+{
+  bool res =false; 
+  if(d1.nbJourDansMois()>12 || d1.nbJourDansMois() <1)
+  {
+    res = false; 
+  }
+  return res; 
 }
