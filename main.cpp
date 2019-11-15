@@ -3,6 +3,7 @@
 #include "reservation.h"
 #include "Date.h"
 #include "client.h"
+#include "clients.h"
 
 int main() {
 
@@ -34,7 +35,7 @@ int main() {
 	hotel.infoHotel();
 
 	//Création d'une liste de client
-	vector<Client> liste_client={}; 
+	/*vector<Client> liste_client={}; 
 	string nom ="A";
 	for(int i=1;i<=10;i++)
 	{
@@ -44,20 +45,31 @@ int main() {
 
 		nom+="B";
 	}
-	
 
 	for(Client c : liste_client)
 	{
 		c.toString();
-	}
+	}*/
+
+	/*Clients client1;
+	vector<Client> l = client1.gestionHomonyme("Bernard"); 
+	for(Client c : l)
+	{
+		c.toString();
+	}*/
+
 
 	//SAISIE DES DATES DE RESERVATION PAR L'UTILISATEUR
 	Date dateDebut, dateFin;
 	int jour=0;
 	int mois=0;  
-	int annee= 0;  
+	int annee= 0; 
 
-	for(int i=0; i<2; i++)
+	Reservation reservation;  
+
+	//DATE DE DEBUT
+	bool conforme = false; 
+	while (conforme==false)
 	{
 		cout << "Entrez le jour de la date de séjour que vous souhaitez : " ; 
 		cin >> jour ; 
@@ -65,7 +77,42 @@ int main() {
 		cin >> mois ; 
 		cout << "Entrez l'année de la date de séjour que vous souhaitez : " ; 
 		cin >> annee ; 
-		
+		dateDebut.setDate(jour, mois, annee);
+		conforme = reservation.verifieDate(dateDebut);
+		if(conforme==false)
+		{
+			cout << "Veuillez entrer une date valide !! " << endl; 
+		}
+
+	}
+	conforme = false;
+	//DATE DE FIN
+	while (conforme==false)
+	{
+		cout << "Entrez le jour de la date de séjour que vous souhaitez : " ; 
+		cin >> jour ; 
+		cout << "Entrez le mois de la date de séjour que vous souhaitez : " ; 
+		cin >> mois ; 
+		cout << "Entrez l'année de la date de séjour que vous souhaitez : " ; 
+		cin >> annee ; 
+		dateFin.setDate(jour, mois, annee);
+		conforme = reservation.verifieDate(dateDebut);
+		if(conforme==false)
+		{
+			cout << "Veuillez entrer une date valide !! " << endl; 
+		}
+
+	}
+	reservation.setDatesSejour(dateDebut, dateFin); 
+	bool res =false; 
+	
+	while (res == false )
+	{
+	 res =reservation.dateSejourCoherentes();
+	 if(res==false)
+		{
+			cout << "La date de fin de séjour doit être postérieur avec la date de début de séjour ! " << endl; 
+		} 
 	}
 
 
