@@ -84,8 +84,9 @@ void Reservation::setDatesSejour(Date dateDebut, Date dateFin)
   m_date_fin = dateFin; 
 }
 
-double Reservation::calculMontant(int NombreNuit, double prixNuit, double remise)
+double Reservation::calculMontant( double prixNuit, double remise)
 {
+  int NombreNuit = m_date_debut.differenceDate(m_date_debut, m_date_fin);
   double montant=NombreNuit*prixNuit*remise; 
   return montant; 
 }

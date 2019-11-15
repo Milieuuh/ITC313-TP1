@@ -7,6 +7,8 @@
 */
 
 #include "Date.h"
+#include <iostream>
+using namespace std; 
 
 Date::Date()
 {
@@ -59,7 +61,7 @@ string Date::dateToString()
     string mois[12]={"Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Décembre"};
     string current_mois=mois[m_mois-1];
 
-    //string display = "Date : "+to_string(getJour())+" "+current_mois+" "+to_string(getAnnee());
+    cout << "Date : " << getJour() << " "<< current_mois <<" "<<getAnnee();
     return " date à faire";
    
 }

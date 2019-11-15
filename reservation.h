@@ -35,7 +35,7 @@ class Reservation{
     void setDatesSejour(Date dateDebut, Date dateFin);
     
     //AUTRES METHODES
-    double calculMontant(int NombreNuit, double prixNuit, double remise=1);
+    double calculMontant(double prixNuit, double remise=1);
     
   
   private:
