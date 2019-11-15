@@ -13,24 +13,27 @@
 
 using namespace std;
 
+enum m_type_Chambre { simple, confort, suite};
+
 class Chambre{
   public:
     Chambre();
-    Chambre(int id, string type="", double prix=0);
+    Chambre(int id, m_type_Chambre type, double prix=0);
     
     double getPrixChambre();
-    string getTypeChambre();
+    m_type_Chambre getTypeChambre();
     int getIdChambre();
     
     void setPrixChambre(double prix);
-    void setTypeChambre(string type);
+    void setTypeChambre(m_type_Chambre type);
+    void setChambre(m_type_Chambre type, double prix);
   
     string toString();
   
   private:
-    int m_id_Chambre;
-    string m_type_Chambre;
+    int m_id_Chambre;    
     double m_prix_Chambre;
+    m_type_Chambre m_type;
 
 };
 

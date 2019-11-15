@@ -6,8 +6,8 @@
 
 int main() {
 
-	Chambre chambre(0, "grande", 50); 
-	Chambre chambre2(0, "grande", 50); 
+	Chambre chambre(0, simple, 50); 
+	Chambre chambre2(0, simple, 50); 
 
 	Hotel hotel("", "Nom", "Los Angeles");
 
