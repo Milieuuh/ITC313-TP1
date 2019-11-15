@@ -9,4 +9,6 @@ Création de la classe Client
 
 Ajout des méthodes dans les classes
 
-Question 6
+Question 6 faite
+Question 7 en cours
+Question 9 en cours
