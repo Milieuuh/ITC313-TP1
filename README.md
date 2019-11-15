@@ -6,3 +6,7 @@ Création de la classe Chambre
 Création de la classe Hotel
 Création de la classe Réservation
 Création de la classe Client
+
+Ajout des méthodes dans les classes
+
+Question 6
