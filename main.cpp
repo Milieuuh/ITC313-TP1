@@ -50,9 +50,7 @@ int main() {
 	{
 		c.toString();
 	}
-	
-	Client clLambda(0,"","");
-	clLambda.gestionHomonyme("A",liste_client);
+
 
 	return 0; 
 }
