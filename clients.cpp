@@ -1,4 +1,3 @@
-
 #include "clients.h"
 
 /////CONSTRUCTEUR
