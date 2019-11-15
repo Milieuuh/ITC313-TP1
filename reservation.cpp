@@ -32,7 +32,7 @@ Reservation::Reservation(int id, Date debut, Date fin,string id_hotel, int id_ch
 }
 
 
-//GETTERS
+////////////////////////////////////////////////////////////////////GETTERS
 int Reservation::getIdReservation()
 {
    return m_id_reservation; 
@@ -68,6 +68,7 @@ double Reservation::geMontantTotal()
   return m_montant_total;
 }
 
+///////////////////////////////////////////////////////////////////SETTERS
 void Reservation::setMontantTotal(double prix)
 {
   m_montant_total = prix; 
@@ -84,6 +85,7 @@ void Reservation::setDatesSejour(Date dateDebut, Date dateFin)
   m_date_fin = dateFin; 
 }
 
+///////////////////////////////////////////////////////////////////AUTRES METHODES
 double Reservation::calculMontant( double prixNuit, double remise)
 {
   int NombreNuit = m_date_debut.differenceDate(m_date_fin);
@@ -95,9 +97,20 @@ double Reservation::calculMontant( double prixNuit, double remise)
 bool Reservation::verifieDate(Date d1)
 {
   bool res =false; 
-  if(d1.nbJourDansMois()>12 || d1.nbJourDansMois() <1)
+  if(d1.getMois()>12 || d1.getMois() <1)
   {
     res = false; 
+  } 
+  else if(d1.getJour() > d1.nbJourDansMois()|| d1.getJour()<1)
+  {
+    res = false; 
+  } else if( d1.getAnnee()<2019 && d1.getAnnee()>2100)
+  {
+      res= false; 
+  }
+  else 
+  {
+    res = true; 
   }
   return res; 
 }
