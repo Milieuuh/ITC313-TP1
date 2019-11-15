@@ -19,9 +19,7 @@ Chambre::Chambre(int id, m_type_Chambre type, double prix)
     m_id_Chambre=id;
     m_prix_Chambre=prix;
 
-    
-    m_type=type;
- 
+    setTypeChambre(type); 
     
 }
 
@@ -49,18 +47,26 @@ void Chambre::setPrixChambre(double prix)
 
 void Chambre::setTypeChambre(m_type_Chambre type)
 {
-  m_type=type;
+    if(type==simple||type==confort||type==suite)
+    {
+      m_type=type;
+    }
+    else
+    {
+      m_type=simple;
+    }  
+    
 }
 
 void Chambre::setChambre(m_type_Chambre type, double prix)
 {
   m_prix_Chambre=prix;
-  m_type=type;
+  setTypeChambre(type);
 }
 
 //TO STRING
-string Chambre::toString()
+string Chambre::infoChambre()
 {
-    //return "Chambre n°" << getIdChambre() << "\nType : " << getTypeChambre() << "\nPrix : "<<getPrixChambre() <<" €";
-    return ""; 
+    //return "Chambre n°"+std::to_string(getIdChambre())+"\nType : "+std::to_string(getTypeChambre())+"\nPrix : "+std::to_string(getPrixChambre())+" €";
+    return "A tester"; 
 }
