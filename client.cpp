@@ -46,8 +46,9 @@ Client::Client(int id,string nom, string prenom,int nbReservations)
   //To String
   string Client::toString()
   {
-      return "à faire";
-    //return "Client n°"+getIdClient()+"\nNom : "+getNomClient()+"\nPrénom : "+getPrenomClient()+"\nNombre de réservations : "+getNbReservations();
+    cout <<"Id : "<<m_id_Client<<"\nNom : "<<m_nom_Client<<"\nPrenom : "<<m_prenom_Client<<"\nNombre de reservation : "<<m_nbReservations_Client<<"\n\n";
+    
+    return "";
   }
   
 

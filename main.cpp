@@ -32,5 +32,21 @@ int main() {
 
 	//Informations de l'hotel
 	hotel.infoHotel();
+
+	//Création d'une liste de client
+	vector<Client> liste_client={}; 
+
+	for(int i=1;i<=10;i++)
+	{
+		Client client1(i, "A", "A");
+		liste_client.push_back(client1);
+	}
+	
+
+	for(Client c : liste_client)
+	{
+		c.toString();
+	}
+
 	return 0; 
 }
