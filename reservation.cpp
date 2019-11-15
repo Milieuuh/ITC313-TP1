@@ -114,3 +114,15 @@ bool Reservation::verifieDate(Date d1)
   }
   return res; 
 }
+
+bool Reservation::dateSejourCoherentes()
+{
+  bool res= false; 
+
+  if(getDateDebut().getMois() == getDateFin().getMois() && getDateDebut().getJour() <= getDateFin().getJour())
+  {
+    res= true;
+  }
+
+  return res; 
+}
