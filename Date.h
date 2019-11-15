@@ -25,6 +25,8 @@ class Date{
     
     string toString();
     string dateToString();
+    int differenceDate(Date fin); 
+    int nbJourDansMois(); 
   
   private:
     int m_jour;

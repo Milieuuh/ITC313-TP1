@@ -28,6 +28,7 @@ Reservation::Reservation(int id, Date debut, Date fin,string id_hotel, int id_ch
      m_id_hotel= id_hotel; 
      m_id_chambre= id_chambre; 
      m_montant_total=montant;
+     m_id_client = id_client; 
 }
 
 
@@ -77,9 +78,10 @@ void Reservation::setIDChambre(int idChambre)
   m_id_chambre = idChambre;
 }
     
-void Reservation::setDatesSejour()
+void Reservation::setDatesSejour(Date dateDebut, Date dateFin)
 {
-  
+  m_date_debut = dateDebut; 
+  m_date_fin = dateFin; 
 }
 
 double Reservation::calculMontant(int NombreNuit, double prixNuit, double remise)
