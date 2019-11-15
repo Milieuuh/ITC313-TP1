@@ -30,6 +30,7 @@ int main() {
 		}			
 	}
 
+	//Informations de l'hotel
 	hotel.infoHotel();
 	return 0; 
 }
