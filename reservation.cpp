@@ -95,7 +95,7 @@ double Reservation::calculMontant( double prixNuit, double remise)
 
 
 bool Reservation::verifieDate(Date d1)
-{
+{ 
   bool res =false; 
   if(d1.getMois()>12 || d1.getMois() <1)
   {
