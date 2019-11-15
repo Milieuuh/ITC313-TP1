@@ -35,7 +35,5 @@ int main() {
 		c.infoChambre();
 	}
 	
-
-
 	return 0; 
 }
