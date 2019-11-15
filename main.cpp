@@ -51,16 +51,19 @@ int main() {
 		c.toString();
 	}*/
 
-	/*Clients client1;
-	vector<Client> l = client1.gestionHomonyme("Bernard"); 
+	Clients client1;
+	string nom; 
+	cin >> nom; 
+	vector<Client> l = client1.gestionHomonyme(nom); 
 	for(Client c : l)
 	{
 		c.toString();
-	}*/
+	}
+	client1.choixClient(l);
 
 
 	//SAISIE DES DATES DE RESERVATION PAR L'UTILISATEUR
-	Date dateDebut, dateFin;
+/*	Date dateDebut, dateFin;
 	int jour=0;
 	int mois=0;  
 	int annee= 0; 
@@ -114,7 +117,7 @@ int main() {
 			cout << "La date de fin de séjour doit être postérieur avec la date de début de séjour ! " << endl; 
 		} 
 	}
-
+*/
 
 	return 0; 
 }
