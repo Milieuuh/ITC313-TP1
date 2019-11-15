@@ -40,3 +40,4 @@ vector<Chambre> Hotel::getListeChambres()
  {
     m_liste_chambres.push_back(ch);
  }
+

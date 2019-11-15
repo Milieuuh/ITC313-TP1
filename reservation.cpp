@@ -9,6 +9,7 @@
 #include "reservation.h"
 #include "Date.h"
 
+//CONSTRUCTEURS
 Reservation::Reservation()
 {   
      m_id_reservation=0; 
@@ -29,6 +30,8 @@ Reservation::Reservation(int id, Date debut, Date fin,string id_hotel, int id_ch
      m_montant_total=montant;
 }
 
+
+//GETTERS
 int Reservation::getIdReservation()
 {
    return m_id_reservation; 
@@ -74,12 +77,13 @@ void Reservation::setIDChambre(int idChambre)
   m_id_chambre = idChambre;
 }
     
-void Reservation::modifierDatesSejour()
+void Reservation::setDatesSejour()
 {
-
+  
 }
 
 double Reservation::calculMontant(int NombreNuit, double prixNuit, double remise)
 {
   double montant=NombreNuit*prixNuit*remise; 
+  return montant; 
 }
