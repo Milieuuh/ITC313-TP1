@@ -35,11 +35,14 @@ int main() {
 
 	//Création d'une liste de client
 	vector<Client> liste_client={}; 
-
+	string nom ="A";
 	for(int i=1;i<=10;i++)
 	{
-		Client client1(i, "A", "A");
+		
+		Client client1(i, nom, "A");
 		liste_client.push_back(client1);
+
+		nom+="B";
 	}
 	
 
@@ -47,6 +50,10 @@ int main() {
 	{
 		c.toString();
 	}
+	
+	Client clLambda(0,"","");
+	clLambda.gestionHomonyme("A",liste_client);
 
 	return 0; 
 }
+

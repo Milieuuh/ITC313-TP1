@@ -23,7 +23,7 @@ Chambre::Chambre(int id, m_type_Chambre type, double prix)
     reserve=false;
 }
 
-//GETTERS
+///////////////////////////////////////////////////////////GETTERS
 double Chambre::getPrixChambre()
 {
   return m_id_Chambre;
@@ -66,7 +66,7 @@ string Chambre::getReserve(bool reserver)
     return s;
 }
 
-//SETTERS
+///////////////////////////////////////////////////////////////////////////SETTERS
 void Chambre::setPrixChambre(double prix)
 {
   m_prix_Chambre=prix;

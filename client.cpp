@@ -43,7 +43,20 @@ Client::Client(int id,string nom, string prenom,int nbReservations)
      m_nbReservations_Client=nbReservation; 
   }
     
-  //To String
+///////////////////////////////////////////////////
+ void Client::gestionHomonyme(string nom,vector<Client> clients)
+ {
+   for(Client c:clients)
+   {
+   
+     if(nom==c.getNomClient())
+     {
+       cout<<"good";
+     }
+   }
+ }    
+
+//////////////////////////////////////////////////To String
   string Client::toString()
   {
     cout <<"Id : "<<m_id_Client<<"\nNom : "<<m_nom_Client<<"\nPrenom : "<<m_prenom_Client<<"\nNombre de reservation : "<<m_nbReservations_Client<<"\n\n";

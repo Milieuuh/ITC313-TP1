@@ -10,6 +10,7 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Client{
@@ -24,6 +25,7 @@ class Client{
     void setNbReservation(int nbReservation);
     
     string toString();
+    void gestionHomonyme(string nom,vector<Client> clients);
   
   private:
     int m_id_Client;
